@@ -1,5 +1,5 @@
 ## Repository links
- - [source Repo](https://github.com/jeevanreddymure/about-me/edit/master/README.md)
+ - [source Repo](https://jeevanreddymure.github.io/readme/)
 
  - [Hosted page](https://jeevanreddymure.github.io/about-me/)
 ## introduction
