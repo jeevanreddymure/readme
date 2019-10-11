@@ -5,61 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Joseph Watts - Index</title>
+    <title>Jeevan reddy - Index</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/watts.css" type="text/css">
+    
     <style>
             body {
         background-image: url("https://github.com/jeevanreddymure/readme/blob/master/water-1330252__340.jpg?raw=true");
             background-repeat:no-repeat;
            background-size:cover;
     } 
+    #content {
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+body {
+      font-family: helvetica, sans-serif;
+      width: 350px;
+    }
+
+    label {
+      font-weight: bold;  
+    }
+
+    div {
+      padding-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+
+    p {
+      background: #FFC125;
+      color: #5E2612;
+      padding: 10px;
+      visibility: hidden;
+    }
+    img{
+        border-radius: 50%;   
+      }
         </style>
 </head><!--Section: Contact v.2-->
-<section class="mb-4">
 
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4">please provide the inputs.!</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5"></p>
-    
-        <div class="row">
-    
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="number" id="name" name="name" class="form-control">
-                                <label for="name" class=""></label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="number" id="email" name="email" class="form-control">
-                                <label for="email" class=""></label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                    </div>
-                    <div class="text-center text-md-center">
-                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Add</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                    <!--Grid column-->
-            
-                    
-            
+<body>
+        <nav class="navbar navbar-expand-md navbar-black fixed-top bg-dark">
+                <a class="navbar-brand" href="#"><img src="https://github.com/jeevanreddymure/readme/blob/master/IMG_20190815_162519_139.jpg?raw=true" class="rounded-corners" alt="Profile" width="50" height="50"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home <span class="sr-only">(current), </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="add.html"> Calculator</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Submit</button>
+                    </form>
                 </div>
+            </nav>
+    <main>
+            <div class="container-fluid" id="content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Temperature Calculator!</h3>
+            <br>
+            <div class="row">
+                
+                    <div class="col-md-12">
+                            <label for="weight-field">Enter the temperature</label>
+                            <input type="text" id="weight-field" name="weight-field">
+                        </div>
+                    
+                        <div class="col-md-12">
+                        <label>Temperature in celisus: <span id="total-amount"></span></label>
+                        </div>
+                        <div class="col-md-2">
+                        <button id="calculate" type="submit">Calculate</button>
+                        </div>
+                        
+                                
+                                <div class="col-md-4">
+                                    <label>Tempareture calculator has been used <span id="times">0</span> times</label>
+                                </div>
+                            
+                            
+                        <div class="col-md-12">
+                                <label for="customname">Enter custom name:</label>
+                                <input id="customname" type="text" placeholder="">
+                              </div>
+                              <div class="col-md-12">
+                                <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+                                <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+                              </div>
+                              <div class="col-md-12">
+                                <button class="randomize">Generate random story</button>
+                              </div>
+                              <p class="story"></p>
+
+                        
             
-            </section>
+            
+            </div>
+    </main> 
+        
+<script src="cal.js"></script>
+<script src="story.js"></script>
+</body>
+
+
+</html>
+
